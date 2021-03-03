@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz-App</title>
+    <!-- my CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <!-- Font Awesome CSS-->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+</head>
+
+<body>
+    <!-- Quiz Detail -->
+
+    <div class="container bg-info rounded text-center shadow">
+        <div class="m-2">
+            <h2 class="p-2">Question <span id="quesCompleted" class="fs-1">1</span> of <span id="totalQues">5</span></h2>
+            <h2 class="p-2">Math Quiz</h2>
+        </div>
+    </div>
+    <br>
+
+    <!-- Question -->
+
+    <div class="container bg-light text-left shadow">
+        <div class="m-2">
+            <h1 id="ques" class="p-5"></h1>
+        </div>
+    </div>
+
+    <!-- Options -->
+
+    <div class="container bg-light text-left shadow">
+        <div id="optionsParent" class="m-2"></div>
+        <br>
+        <div class="m-3 p-3 d-flex justify-content-end ">
+            <button id="backBtn" class="btn btn-outline-info nextbtn fs-5 p-2 m-2" onclick="back()">Back</button>
+            <button id="nextBtn" class="btn btn-outline-info nextbtn fs-5 p-2 m-2" onclick="nextQuestion()">Next</button>
+            <button id="submitBtn" class="btn btn-outline-info nextbtn fs-5 p-2 m-2 d-none" onclick="showResult()" onload="nextQuestion()">Submit</button>
+        </div>
+    </div>
+
+
+    <!-- my JS -->
+    <script src="app.js"></script>
+    <!-- Bootsrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
